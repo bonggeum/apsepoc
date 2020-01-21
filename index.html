@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Flex</title>
+     <style>
+         *{padding: 0; margin: 0; box-sizing: border-box;}
+         img{max-width: 100%;}
+         body{font-family: arial, sans-serif;}
+         .header{text-align: center; padding: 30px;}
+         .row{display: flex; flex-wrap: wrap; padding: 0 5px;}
+         .column{flex: 100%; max-width:100%; margin-bottom: 30px;}
+         .column img{margin-bottom: 8px;}
+         @media screen and (min-width:600px){
+             .column{flex:50%; max-width: 50%; padding:0 4px;}
+         }
+         
+         @media screen and (min-width:960px){
+             .column{flex:25%; max-width: 25%;}
+         }
+     </style>
+ </head>
+ <body>
+     <header class="header">
+        <h1>Responsive Image Gallery</h1>
+         <p>Resize the browser window to see the responsive effect.</p>
+     </header>
+     <div class="row">
+         <div class="column">
+            <img src="images/wedding.jpg" alt="">
+            <img src="images/rocks.jpg" alt="">
+            <img src="images/falls2.jpg" alt="">
+            <img src="images/paris.jpg" alt="">
+            <img src="images/nature.jpg" alt="">
+            <img src="images/paris.jpg" alt="">
+         </div>
+         <div class="column">
+            <img src="images/underwater.jpg" alt="">
+            <img src="images/ocean.jpg" alt="">
+            <img src="images/wedding.jpg" alt="">
+            <img src="images/mountainskies.jpg" alt="">
+            <img src="images/rocks.jpg" alt="">
+            <img src="images/mist.jpg" alt="">
+            <img src="images/underwater.jpg" alt="">
+         </div>
+         <div class="column">
+            <img src="images/wedding.jpg" alt="">
+            <img src="images/rocks.jpg" alt="">
+            <img src="images/falls2.jpg" alt="">
+            <img src="images/paris.jpg" alt="">
+            <img src="images/nature.jpg" alt="">
+            <img src="images/paris.jpg" alt="">
+         </div>
+         <div class="column">
+            <img src="images/underwater.jpg" alt="">
+            <img src="images/ocean.jpg" alt="">
+            <img src="images/wedding.jpg" alt="">
+            <img src="images/mountainskies.jpg" alt="">
+            <img src="images/rocks.jpg" alt="">
+            <img src="images/mist.jpg" alt="">
+            <img src="images/underwater.jpg" alt="">
+         </div>
+     </div>
+ </body>
+</html>
