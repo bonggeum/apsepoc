@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+
+*{
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+}
+
+body{
+  margin: 0;
+  background: rgb(29, 30, 34);
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+}
+
+.content-text{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Paytone One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 5rem;
+}
+
+.first__name, .second__name{
+  height: 100%;
+  width: 50%;
+  overflow-x: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first__name{
+  background: white;
+  color: black;
+}
+
+.first__name .text__name{
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  position: relative;
+  left: 50%;
+  font-size: 6vmax;
+}
+
+.second__name{
+  background: black;
+  color: white;
+}
+
+.second__name .text__name{
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  position: relative;
+  left: -50%;
+  font-size: 6vmax;
+}
